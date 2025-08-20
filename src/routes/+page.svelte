@@ -4,36 +4,11 @@
 </script>
 
 <!-- Hero Section -->
-<section
-  class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-offwhite via-white to-gold/5 px-4 overflow-hidden"
->
-  <!-- Background decorative elements -->
-  <div class="absolute inset-0 overflow-hidden">
-    <div
-      class="absolute -top-40 -right-40 w-80 h-80 bg-gold/5 rounded-full blur-3xl"
-    ></div>
-    <div
-      class="absolute -bottom-40 -left-40 w-80 h-80 bg-brown/5 rounded-full blur-3xl"
-    ></div>
-    <div
-      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gold/3 rounded-full blur-3xl"
-    ></div>
-  </div>
-
-  <!-- Subtle grid pattern -->
-  <div
-    class="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(0,0,0,0.02)_1px,transparent_0)] bg-[length:32px_32px]"
-  ></div>
-
+<section class="relative min-h-screen flex items-center justify-center px-4">
   <div class="relative max-w-5xl mx-auto text-center z-10">
     <!-- Logo with modern styling -->
     <div class="mb-12 mx-auto w-fit">
-      <div class="relative bg-white/60 backdrop-blur-sm">
-        <img src={logo} alt="The Artisans" class="size-20" />
-        <!-- <div
-          class="absolute inset-0 bg-gradient-to-br from-gold/10 to-brown/10 rounded-3xl"
-        ></div> -->
-      </div>
+      <img src={logo} alt="The Artisans" class="size-20" />
     </div>
 
     <!-- Main heading with modern typography -->
@@ -54,18 +29,18 @@
 
     <!-- Floating accent elements -->
     <div class="flex justify-center items-center space-x-8 md:space-x-12">
-      <div class="w-2 h-2 bg-gold rounded-full animate-pulse"></div>
+      <div class="w-2 h-2 bg-gold rounded-full bg-red-500 animate-pulse"></div>
       <div
-        class="w-1 h-12 bg-gradient-to-b from-gold/50 to-transparent rounded-full"
+        class="w-1 h-12 bg-gradient-to-b from-gold/50 bg-red-500 to-transparent rounded-full"
       ></div>
       <div
-        class="w-3 h-3 bg-brown/60 rounded-full animate-pulse delay-500"
+        class="w-3 h-3 bg-brown/60 rounded-full bg-red-500 animate-pulse delay-500"
       ></div>
       <div
-        class="w-1 h-12 bg-gradient-to-b from-brown/50 to-transparent rounded-full"
+        class="w-1 h-12 bg-gradient-to-b from-brown/50 bg-red-500 to-transparent rounded-full"
       ></div>
       <div
-        class="w-2 h-2 bg-gold/80 rounded-full animate-pulse delay-1000"
+        class="w-2 h-2 bg-gold/80 rounded-full bg-red-500 animate-pulse delay-1000"
       ></div>
     </div>
   </div>
@@ -168,9 +143,7 @@
               Live Demo
             </a>
             <a
-              href="https://github.com/the-artisans/{project.title
-                .toLowerCase()
-                .replace(/\s+/g, '-')}"
+              href="https://github.com/artisansco/{project.title}"
               class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center group-hover:bg-gold/20 transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
@@ -188,6 +161,7 @@
                   d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
                 />
               </svg>
+              <span class="sr-only">{project.title}</span>
             </a>
           </div>
 
@@ -197,7 +171,9 @@
             {project.title}
           </h3>
 
-          <p class="font-sans text-grayshadow mb-6 leading-relaxed text-sm">
+          <p
+            class="font-sans text-grayshadow mb-6 leading-relaxed text-sm line-clamp-2"
+          >
             {project.description}
           </p>
 
@@ -217,7 +193,7 @@
 
     <div class="text-center mt-16">
       <a
-        href="https://github.com/the-artisans"
+        href="https://github.com/artisansco"
         class="inline-flex items-center font-sans font-semibold text-gold hover:text-brown transition-colors bg-gold/5 hover:bg-gold/10 px-6 py-3 rounded-xl border border-gold/20"
         target="_blank"
         rel="noopener noreferrer"
@@ -277,14 +253,29 @@
             <span
               class="inline-block px-4 py-2 text-xs font-semibold text-brown bg-brown/10 rounded-full border border-brown/20"
             >
-              {tutorial.difficulty}
+              <a
+                href="https://github.com/artisansco"
+                class="text-xs text-grayshadow hover:text-gold transition-colors duration-200 flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Original Source
+                <svg
+                  class="ml-1 w-3 h-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
             </span>
-            <a
-              href="#"
-              class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center group-hover:bg-gold/20 transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <span class="size-12 flex items-center justify-center">
               <svg
                 class="w-6 h-6 text-gold"
                 fill="none"
@@ -304,7 +295,7 @@
                   d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
                 />
               </svg>
-            </a>
+            </span>
           </div>
 
           <h3
@@ -324,50 +315,6 @@
                 </span>
               {/each}
             </div>
-          </div>
-
-          <div class="flex items-center justify-between">
-            <button
-              type="button"
-              class="inline-flex items-center font-sans font-semibold text-gold hover:text-brown transition-colors cursor-not-allowed opacity-75"
-              disabled
-            >
-              Coming Soon
-              <svg
-                class="ml-2 w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </button>
-            <a
-              href="#"
-              class="text-xs text-grayshadow hover:text-gold transition-colors duration-200 flex items-center"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Original Source
-              <svg
-                class="ml-1 w-3 h-3"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
-              </svg>
-            </a>
           </div>
         </article>
       {/each}

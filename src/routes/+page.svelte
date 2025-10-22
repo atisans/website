@@ -4,7 +4,7 @@
 </script>
 
 <!-- Hero Section -->
-<section class="relative min-h-screen flex items-center justify-center px-4">
+<section class="relative min-h-screen flex items-center justify-center px-4 bg-gradient-to-br from-offwhite via-offwhite to-beige/30">
   <div class="relative max-w-5xl mx-auto text-center z-10">
     <!-- Logo with modern styling -->
     <div class="mb-12 mx-auto w-fit">
@@ -29,18 +29,18 @@
 
     <!-- Floating accent elements -->
     <div class="flex justify-center items-center space-x-8 md:space-x-12">
-      <div class="w-2 h-2 bg-gold rounded-full bg-red-500 animate-pulse"></div>
+      <div class="w-2 h-2 bg-gold rounded-full animate-pulse"></div>
       <div
-        class="w-1 h-12 bg-gradient-to-b from-gold/50 bg-red-500 to-transparent rounded-full"
+        class="w-1 h-12 bg-gradient-to-b from-gold/50 to-transparent rounded-full"
       ></div>
       <div
-        class="w-3 h-3 bg-brown/60 rounded-full bg-red-500 animate-pulse delay-500"
+        class="w-3 h-3 bg-brown/60 rounded-full animate-pulse delay-500"
       ></div>
       <div
-        class="w-1 h-12 bg-gradient-to-b from-brown/50 bg-red-500 to-transparent rounded-full"
+        class="w-1 h-12 bg-gradient-to-b from-brown/50 to-transparent rounded-full"
       ></div>
       <div
-        class="w-2 h-2 bg-gold/80 rounded-full bg-red-500 animate-pulse delay-1000"
+        class="w-2 h-2 bg-gold/80 rounded-full animate-pulse delay-1000"
       ></div>
     </div>
   </div>

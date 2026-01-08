@@ -13,7 +13,7 @@
 
     <!-- Main heading with modern typography -->
     <h1
-      class="font-serif text-6xl md:text-7xl lg:text-8xl text-charcoal mb-8 font-bold tracking-tight leading-none"
+      class="font-serif text-6xl md:text-7xl lg:text-8xl text-beige mb-8 font-bold tracking-tight leading-none"
     >
       <span class="block text-primary">Building Tools.</span>
       <span class="block bg-clip-text">Sharing Knowledge.</span>
@@ -46,30 +46,30 @@
   </div>
 
   <!-- Scroll indicator -->
-  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-    <div class="flex flex-col items-center text-grayshadow/60">
-      <div
-        class="w-px h-12 bg-gradient-to-b from-transparent to-grayshadow/30 mb-2"
-      ></div>
-      <svg
-        class="w-5 h-5 animate-bounce"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M19 14l-7 7m0 0l-7-7m7 7V3"
-        />
-      </svg>
-    </div>
+  <a href="#about" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+  <div class="flex flex-col items-center text-grayshadow/60 hover:text-gold transition-colors">
+  <div
+  class="w-px h-12 bg-gradient-to-b from-transparent to-grayshadow/30 mb-2"
+  ></div>
+  <svg
+  class="w-5 h-5 animate-bounce"
+  fill="none"
+  stroke="currentColor"
+  viewBox="0 0 24 24"
+  >
+  <path
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+  />
+  </svg>
   </div>
+  </a>
 </section>
 
 <!-- About Section -->
-<section class="py-20 px-4 bg-white">
+<section id="about" class="py-20 px-4 bg-white">
   <div class="max-w-4xl mx-auto text-center">
     <h2 class="font-serif text-4xl text-charcoal mb-6 font-bold">
       Crafting Tools Together
@@ -321,40 +321,42 @@
     </div>
 
     <div class="text-center mt-16">
-      <a
-        href="#"
-        class="inline-flex items-center font-sans font-semibold text-gold hover:text-brown transition-colors bg-gold/5 hover:bg-gold/10 px-6 py-3 rounded-xl border border-gold/20"
-      >
-        <svg
-          class="mr-3 w-5 h-5"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-          />
-        </svg>
-        Suggest a project to rewrite
-        <svg
-          class="ml-2 w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-          />
+    <a
+    href="https://github.com/artisansco/website"
+    target="_blank"
+      rel="noopener noreferrer"
+    class="inline-flex items-center font-sans font-semibold text-gold hover:text-brown transition-colors bg-gold/5 hover:bg-gold/10 px-6 py-3 rounded-xl border border-gold/20"
+    >
+    <svg
+    class="mr-3 w-5 h-5"
+    fill="none"
+      stroke="currentColor"
+    viewBox="0 0 24 24"
+    >
+    <path
+    stroke-linecap="round"
+    stroke-linejoin="round"
+      stroke-width="2"
+        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+      />
+    </svg>
+    Suggest a project to rewrite
+    <svg
+    class="ml-2 w-4 h-4"
+    fill="none"
+      stroke="currentColor"
+    viewBox="0 0 24 24"
+    >
+    <path
+    stroke-linecap="round"
+    stroke-linejoin="round"
+      stroke-width="2"
+        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+        />
         </svg>
       </a>
     </div>
-  </div>
+    </div>
 </section>
 
 <!-- Community Section -->
